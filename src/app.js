@@ -3,7 +3,6 @@ import { View } from 'react-native';
 import { Router, Scene } from 'react-native-router-flux';
 
 // In-house modules
-import { Header } from './components/common';
 import Home from './components/scenes/Home';
 import Slider from './components/scenes/Slider';
 

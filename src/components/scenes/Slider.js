@@ -4,7 +4,7 @@ import {observer} from 'mobx-react/native';
 import {toJS} from 'mobx';
 import _ from 'lodash';
 
-import {Card, CardSection, Button} from '../common';
+import {Card, CardSection} from '../common';
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
