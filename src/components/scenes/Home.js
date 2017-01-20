@@ -3,7 +3,7 @@ import {View, Text} from 'react-native';
 import {observer} from 'mobx-react/native';
 import {Actions} from 'react-native-router-flux'
 
-import {Card, CardSection, Button, Spinner} from '../common';
+import {Spinner} from '../common';
 import List from '../containers/List';
 
 // Stores
@@ -17,7 +17,7 @@ class Home extends Component {
   }
 
   gotoSlider = (item) => {
-    Actions.slider({text : 'Hello World!'});
+    Actions.slider({text : 'Header'});
     firebaseStore.setItem(item);
   }
 
@@ -39,15 +39,3 @@ class Home extends Component {
 
 export default Home;
 
-//
-// new Firebase("https://authrn-ac203.firebaseio.com/").child("items").update({
-//   dome8: {
-//     name: 'lubys',
-//     url: "https://firebasestorage.googleapis.com/v0/b/authrn-ac203.appspot.com/o/office%2Fweb-DNAMIC4.jpg?alt=media&token=233d91c6-2c18-4d49-9109-e18e315264e1",
-//     screenshots : {
-//       1: "https://firebasestorage.googleapis.com/v0/b/authrn-ac203.appspot.com/o/office%2Fweb-DNAMIC4.jpg?alt=media&token=233d91c6-2c18-4d49-9109-e18e315264e1",
-//       2: "https://firebasestorage.googleapis.com/v0/b/authrn-ac203.appspot.com/o/office%2Fweb-DNAMIC4.jpg?alt=media&token=233d91c6-2c18-4d49-9109-e18e315264e1",
-//       3: "https://firebasestorage.googleapis.com/v0/b/authrn-ac203.appspot.com/o/office%2Fweb-DNAMIC4.jpg?alt=media&token=233d91c6-2c18-4d49-9109-e18e315264e1",
-//     },
-//   },
-// });
